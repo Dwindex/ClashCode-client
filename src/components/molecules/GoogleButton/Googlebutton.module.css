@@ -1,0 +1,24 @@
+@font-face {
+  src: url("/static/fonts/figtree/Figtree-SemiBold.ttf");
+  font-family: "figtree_semibold";
+}
+
+.mainContainer {
+  display: flex;
+  height: 35px;
+  width: 170px;
+  border: 1px solid #747775;
+  border-radius: 5px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer img {
+  margin-right: 10px;
+}
+
+.mainContainer span {
+  font-family: figtree_semibold;
+  font-size: 12px;
+}

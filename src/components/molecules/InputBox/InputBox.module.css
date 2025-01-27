@@ -1,0 +1,39 @@
+@font-face {
+  src: url("/static/fonts/figtree/Figtree-Regular.ttf");
+  font-family: "figtree-regular";
+}
+
+@font-face {
+  src: url("/static/fonts/figtree/Figtree-SemiBold.ttf");
+  font-family: "figtree-semibold";
+}
+
+.container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+  gap: 4px;
+}
+.container label {
+  font-family: "figtree-semibold";
+  font-size: 18px;
+  margin-left: 4px;
+}
+.container input {
+  height: 42px;
+  width: 100%;
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  color: #ffffff;
+  padding-left: 10px;
+  border: none;
+  font-family: "figtree-regular";
+  font-size: 16px;
+  outline: none;
+}
+
+.container input::placeholder {
+  color: #636363;
+}
