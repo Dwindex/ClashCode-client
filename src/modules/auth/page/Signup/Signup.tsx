@@ -1,7 +1,6 @@
 import React, { useState, Suspense } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { RegisterModel } from '@/types/modules/Auth';
-import LoadingSpinner from '@/components/atoms/LoadingSpinner';
+import LoadingSpinner from '../../../../components/atoms/LoadingSpinner';
 import { useSignupMutation } from '../../hooks/mutation/useSignupMutation';
 import { RegisterUserInput } from '../../types/mutation';
 
@@ -11,7 +10,6 @@ const SignupComponent = React.lazy(() =>
 );
 
 const SignupContainer: React.FC = () => {
-    const navigate = useNavigate();
     const [requestData, setRequestData] = useState<RegisterUserInput>({
         username: null,
         email: null,
@@ -32,17 +30,15 @@ const SignupContainer: React.FC = () => {
         try {
             const response = await signUp(requestData);
             if (response.createUser.token) {
-                // Redirect to dashboard or home page after successful signup
-                navigate('/dashboard');
+                localStorage.setItem('token', response.createUser.token);
             }
         } catch (e) {
             console.error('Registration error:', e);
-            // Here you might want to show an error message to the user
         }
     };
 
     if (loading) {
-        return <LoadingSpinner />;
+        return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%' }}><LoadingSpinner /></div>
     }
 
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from '@/styles/footer.module.css'
-import ContentList from "@/components/molecules/ContentList";
-import SocialMediaButton from "";
+import ContentList from "../../molecules/ContentList";
+import SocialMediaButton from "../../molecules/SocialMediaBtn";
 import Constants from "@/constants";
 
 

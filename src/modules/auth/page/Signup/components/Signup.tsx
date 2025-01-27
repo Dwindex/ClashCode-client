@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../Signup.module.css';
 import { RegisterModel } from '@/types/modules/Auth';
 import RightContainer from './RightContainer';
-import InfoLeftContainer from '@/modules/auth/components/InfoLeftContainer';
+import InfoLeftContainer from '../../../components/InfoLeftContainer';
 
 
 interface SignupProps {

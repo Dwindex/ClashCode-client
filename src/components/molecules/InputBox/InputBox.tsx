@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./InputBox.module.css";
 import { BaseProps } from "@/types/common";
-import Input from "@/components/atoms/Input/Input";
+import Input from '../../atoms/Input/Input';
 
 interface InputBoxProps extends BaseProps {
   id?: string;

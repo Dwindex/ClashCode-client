@@ -1,10 +1,7 @@
 
-import { options } from '@/model/styled-components/dropDown';
-import { url } from 'inspector';
-import { title } from 'process';
+import { options } from '@/types/constants';
 
 export default class constants {
-
   static monacoLanguages: options = [
     { "label": "Assembly", "value": "45" },
     { "label": "Bash", "value": "46" },

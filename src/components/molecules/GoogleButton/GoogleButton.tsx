@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./GoogleButton.module.css";
+import styles from "./Googlebutton.module.css";
 import { BaseProps } from "@/types/common";
-import Button from "@/components/atoms/Button/Button";
+import Button from "../../atoms/Button/Button";
 
 interface GoogleButtonProps extends BaseProps {
   onClick?: () => void;
