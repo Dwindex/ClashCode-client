@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { initializeSocket } from './web_socket_initalize';
+// import { initializeSocket } from './web_socket_initalize';
 import { socketChatDataModal } from '../types/play';
 
 interface UseWebSocketProps {
@@ -13,36 +13,36 @@ export const useWebSocket = ({ sessionId, userId, onChatMessage, onSystemEvent }
   const wsRef = useRef<WebSocket | null>(null);
 
   useEffect(() => {
-    if (sessionId) {
-      const ws = initializeSocket(sessionId);
-      wsRef.current = ws;
+    // if (sessionId) {
+    //   const ws = initializeSocket(sessionId);
+    //   wsRef.current = ws;
 
-      ws.onopen = () => {
-        console.log("connected to websocket server in contest page");
-      };
+    //   ws.onopen = () => {
+    //     console.log("connected to websocket server in contest page");
+    //   };
 
-      ws.onmessage = (event: MessageEvent) => {
-        try {
-          const receivedData = JSON.parse(event.data);
-          if (receivedData['type'] === "SYSTEM_EVENT") {
-            onSystemEvent(receivedData['data']['msg']);
-          }
-          if (receivedData['type'] === "CHAT_MESSAGE") {
-            onChatMessage(receivedData['data']);
-          }
-        } catch (error) {
-          console.error("error parsing message:", error);
-        }
-      };
+    //   ws.onmessage = (event: MessageEvent) => {
+    //     try {
+    //       const receivedData = JSON.parse(event.data);
+    //       if (receivedData['type'] === "SYSTEM_EVENT") {
+    //         onSystemEvent(receivedData['data']['msg']);
+    //       }
+    //       if (receivedData['type'] === "CHAT_MESSAGE") {
+    //         onChatMessage(receivedData['data']);
+    //       }
+    //     } catch (error) {
+    //       console.error("error parsing message:", error);
+    //     }
+    //   };
 
-      ws.onclose = () => {
-        console.log("Websocket is disconnected");
-      };
+    //   ws.onclose = () => {
+    //     console.log("Websocket is disconnected");
+    //   };
 
-      ws.onerror = (error: ErrorEvent) => {
-        console.log('webSocket Error:', error);
-      };
-    }
+    //   ws.onerror = (error: ErrorEvent) => {
+    //     console.log('webSocket Error:', error);
+    //   };
+    // }
   }, [sessionId]);
 
   const sendChatMessage = (message: string) => {

@@ -1,0 +1,107 @@
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-Medium.ttf");
+  font-family: "figtree-medium";
+}
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-Regular.ttf");
+  font-family: "figtree-regular";
+}
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-SemiBold.ttf");
+  font-family: "figtree-semibold";
+}
+@font-face {
+  src: url("/static/fonts/Raleway/Raleway-Regular.ttf");
+  font-family: "raleway-regular";
+}
+
+.contestBanner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contestBanner img {
+  margin-top: 45px;
+  max-width: 100%;
+  height: auto;
+}
+
+.ContestsPage {
+  background-color: rgb(5, 21, 33);
+  color: white;
+}
+
+.contests {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.divider {
+  border: 1px solid rgb(103, 114, 121);
+}
+
+.stats {
+  font-family: "figtree-regular";
+  width: 40%;
+  margin: 2%;
+}
+
+.stats h1 {
+  width: 50vh;
+}
+
+.leaderboard {
+  margin-top: 30px;
+}
+
+.contestsCard {
+  font-family: "figtree-regular";
+  width: 50%;
+  height: 20%;
+  margin: 60px;
+}
+
+.contestsCard h1 {
+  margin-bottom: 20px;
+}
+
+.vs {
+  margin-top: 80px;
+}
+
+.howToPlay {
+  height: 100vh;
+}
+
+.faq {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .howToPlay {
+    height: 180vh;
+  }
+  .contests {
+    flex-direction: column;
+  }
+  .divider {
+    display: none;
+  }
+  .contestsCard {
+    width: 45%;
+    margin: 20px;
+  }
+  .stats h1 {
+    width: 40vh;
+    font-size: 28px;
+  }
+  .contests h1 {
+    font-size: 28px;
+    width: 50vh;
+  }
+}

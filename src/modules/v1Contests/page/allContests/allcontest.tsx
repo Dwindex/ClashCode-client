@@ -1,20 +1,19 @@
 import React from "react";
-    import NavBar from "@/components/shared/Navbar";
-import contestBanner from "@/static/images/ContestsPage/contestsBanner.svg";
-import Image from "next/image";
-import Styles from "@/components/ContestsPage/Contests.module.css";
-import ContestsCard from "@/components/styled-components/ContestsPage/ContestsCard";
-import Leaderboard from "@/components/styled-components/dashboard/Leaderboard";
-import HowToPlay from "@/components/styled-components/ContestsPage/HowToPlay";
-import FAQ from "@/components/styled-components/ContestsPage/FAQ";
+import NavBar from "@/components/shared/Navbar";
+import contestBanner from "/static/images/ContestsPage/contestsBanner.svg";
+import Styles from "./allcontest.module.css";
 import Footer from "@/components/shared/Footer";
+import FAQ from "@/components/shared/Faq/Faq";
+import HowToPlay from "@/components/shared/HowToPlay";
+import Leaderboard from "../../components/Leaderboard/Leaderboard";
+import ContestsCard from "../../components/ContestCard/ContestCard";
 
 function Contests() {
   return (
     <div className={Styles.ContestsPage}>
       <NavBar />
       <div className={Styles.contestBanner}>
-        <Image src={contestBanner} alt="Contests" />
+        <img src={contestBanner} alt="Contests" />
       </div>
 
       <div className={Styles.contests}>

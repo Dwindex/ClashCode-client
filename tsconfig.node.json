@@ -23,7 +23,7 @@
 
     "paths": {
       "@/*": ["./src/*"],
-      "modules/*": ["./src/modules/*"],
+      "@/modules*": ["./src/modules/*"],
       "components/*": ["./src/components/*"],
       "core/*": ["./src/core/*"],
       "constants/*": ["./src/constants/*"],

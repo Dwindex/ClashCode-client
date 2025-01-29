@@ -29,6 +29,7 @@ export const useSignupMutation = (): UseSignupMutationResult => {
             }
 
             // You might want to handle the token here, e.g., store it in localStorage
+            // TODO: add to cookies instead
             if (response.data.createUser.token) {
                 localStorage.setItem('token', response.data.createUser.token);
             }

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "press_start_2p_regular";
+  src: url("/static/fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+@font-face {
+  font-family: "figtree_semibold";
+  src: url("/static/fonts/Figtree/Figtree-SemiBold.ttf");
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #051521;
+  gap: 25px;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top > span {
+  font-family: figtree_semibold;
+  color: rgb(255, 240, 234);
+  /* color: #fBf68A;
+  
+    filter: drop-shadow(3px 0 #1E3445) 
+            drop-shadow(-3px 0 #1E3445)
+            drop-shadow(0 3px #1E3445)
+            drop-shadow(0 -3px #1E3445)
+            drop-shadow(3px 3px #1E3445)
+            drop-shadow(-3px 3px #1E3445)
+            drop-shadow(3px -3px #1E3445)
+            drop-shadow(-3px -3px #1E3445); */
+  font-size: 26px;
+  margin-top: 2px;
+}
+
+.score_board {
+  background-color: #ffffff17;
+  border-radius: 10px;
+}
+
+.header,
+.rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #ffffff21;
+}
+.body {
+  height: 350px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+.header > span,
+.rows > span {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-family: press_start_2p_regular;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+}
+.user_data {
+  font-family: figtree_semibold !important;
+}
+.button {
+  width: 100%;
+  background-color: transparent;
+  border: transparent;
+  height: 50px;
+  color: #2245c5;
+  grid-column: 2;
+}

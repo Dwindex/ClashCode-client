@@ -1,5 +1,5 @@
 import React, { useState, Suspense } from 'react';
-import { RegisterModel } from '@/types/modules/Auth';
+import { RegisterModel } from '@/types/modules/auth';
 import LoadingSpinner from '../../../../components/atoms/LoadingSpinner';
 import { useSignupMutation } from '../../hooks/mutation/useSignupMutation';
 import { RegisterUserInput } from '../../types/mutation';
@@ -28,10 +28,7 @@ const SignupContainer: React.FC = () => {
     const register = async (event: React.FormEvent) => {
         event.preventDefault();
         try {
-            const response = await signUp(requestData);
-            if (response.createUser.token) {
-                localStorage.setItem('token', response.createUser.token);
-            }
+            await signUp(requestData);
         } catch (e) {
             console.error('Registration error:', e);
         }

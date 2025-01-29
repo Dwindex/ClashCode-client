@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "figtree_reg";
+  src: url("/static/fonts/figtree/Figtree-Regular.ttf");
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 42px;
+  min-width: 140px;
+  width: 140px;
+  font-family: "figtree_reg";
+  font-size: 16px;
+}
+
+.inside_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 6px;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #B8B8B84F;
+  gap: 12px;
+}
+
+.options_cont {
+  display: none;
+  transition: opacity 5s ease;
+  opacity: 0;
+}
+
+.options_cont_show {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 44px;
+  z-index: 3000;
+  background-color: #4C4C4C;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  min-height: 180px;
+  overflow: auto;
+  border-radius: 0 0 4px 4px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0;
+}
+
+.options_cont_show span {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 8px;
+  transition: 200ms ease;
+}
+
+.options_cont_show span:hover {
+  cursor: pointer;
+  background-color: #001E3F73;
+  border-radius: 6px;
+}
+
+.selected_option_color {
+  background-color: #001E3F !important;
+}

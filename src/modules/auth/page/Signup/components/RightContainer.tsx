@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../Signup.module.css';
-import { RegisterModel } from '@/types/modules/Auth';
+import { RegisterModel } from '@/types/modules/auth';
 import InputBox from '../../../../../components/molecules/InputBox';
 import GoogleButton from '../../../../../components/molecules/GoogleButton';
 import Button from '../../../../../components/atoms/Button';

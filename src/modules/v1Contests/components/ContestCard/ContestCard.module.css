@@ -1,0 +1,74 @@
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-SemiBold.ttf");
+  font-family: "figtree-semibold";
+}
+
+.contestsCard {
+  width: 40vw;
+}
+
+.part1 {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(45, 59, 69);
+  border: 2px solid rgb(103, 114, 121);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.part1 button {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: rgb(251, 223, 83);
+  border: 1px solid rgb(254, 212, 43);
+  border-radius: 2px;
+  font-family: "figtree-semibold";
+  box-shadow: 0 4px rgb(255, 234, 130);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.part2 {
+  display: flex;
+  background-color: rgb(75, 84, 90);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.part2 div {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.part2 dt {
+  margin-top: 8px;
+}
+
+.fee {
+  font-size: 12px;
+  margin-bottom: 4px;
+  margin-left: 36px;
+}
+
+.poolPrize {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.poolName {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contestsCard {
+    width: 80vw;
+  }
+}

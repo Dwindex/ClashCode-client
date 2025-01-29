@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import styles from '../../page/play/Contest.module.css';
+import styles from '@/modules/v1Contests/page/play/play.module.css';
 
 interface ProblemDescriptionProps {
   problem: {

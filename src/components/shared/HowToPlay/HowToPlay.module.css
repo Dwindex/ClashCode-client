@@ -1,0 +1,106 @@
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-Medium.ttf");
+  font-family: "figtree-medium";
+}
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-Regular.ttf");
+  font-family: "figtree-regular";
+}
+@font-face {
+  src: url("/static/fonts/Figtree/Figtree-SemiBold.ttf");
+  font-family: "figtree-semibold";
+}
+@font-face {
+  font-family: "press_start_2p_regular";
+  src: url("/static/fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: white;
+  font-family: "figtree-medium";
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.stepCard {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  background-color: rgba(217, 217, 217, 0.23);
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  position: relative;
+}
+
+.stepNumber {
+  position: absolute;
+  top: -20px;
+  left: 25%;
+  transform: translateX(-50%);
+  background-color: #ff6f3c;
+  color: rgb(42, 42, 42);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "press_start_2p_regular";
+}
+
+.stepTitle {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.stepDescription {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.arrow {
+  margin: auto 10px;
+}
+
+.knif {
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .arrow {
+    transform: rotate(90deg);
+    margin: 0 auto;
+    align-items: center;
+  }
+  .title {
+    margin-top: 100px;
+  }
+}

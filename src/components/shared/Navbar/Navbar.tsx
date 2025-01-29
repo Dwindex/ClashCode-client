@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import styles from "@/styles/NavBar.module.css";
-import profilebg from "@/static/icons/profilebg.svg";
-import Wallet from "@/static/icons/Wallet.svg";
-import Notification from "@/static/icons/Notification.svg";
-import Menu from "@/static/icons/menu.svg";
-import Close from "@/static/icons/close.svg";
+import styles from "./Navbar.module.css";
+import profilebg from "/static/icons/profilebg.svg";
+import Wallet from "/static/icons/Wallet.svg";
+import Notification from "/static/icons/Notification.svg";
+import Menu from "/static/icons/menu.svg";
+import Close from "/static/icons/close.svg";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
