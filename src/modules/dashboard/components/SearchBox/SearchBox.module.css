@@ -1,0 +1,39 @@
+.SearchBox{
+    height: 56px;
+    width: 100%;
+    background-color: #FFFFFF0D;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    
+}
+
+.SearchBox > img{
+    height: 36px;
+    width: 36px;
+    clip-path: circle(50% at center);
+    background-color: #FFFFFF;
+    object-fit:cover;
+    object-position: center;
+}
+
+.SearchBox > input{
+    width: 92%;
+    height: 36px;
+    min-width: 100px;
+    background-color: #FFFFFF1A;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    outline: none;
+    padding: 12px;
+    color: #FFFFFF;
+}
+
+.SearchBox >input::placeholder{
+}

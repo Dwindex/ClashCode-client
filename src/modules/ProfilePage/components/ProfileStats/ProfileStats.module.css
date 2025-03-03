@@ -1,0 +1,95 @@
+@font-face {
+  src: url("../../../../../public/static/fonts/Figtree/Figtree-Medium.ttf");
+  font-family: "figtree-medium";
+}
+@font-face {
+  src: url("../../../../../public/static/fonts/Figtree/Figtree-Regular.ttf");
+  font-family: "figtree-regular";
+}
+@font-face {
+  src: url("../../../../../public/static/fonts/Figtree/Figtree-SemiBold.ttf");
+  font-family: "figtree-semibold";
+}
+
+.activeDays {
+  font-size: 20px;
+  font-family: "figtree-medium";
+  margin-bottom: 20px;
+}
+
+.dropDiv {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-weight: bold;
+}
+
+.yearSelect {
+  background-color: #414c55;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 72px;
+  height: 28px;
+  outline: none;
+  font-family: "figtree-regular";
+}
+
+/* Styling the main container */
+.boxes {
+  background-color: #1b2934;
+  padding: 15px;
+  border-radius: 15px;
+  width: 808px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/* Grid container for active days */
+.gridContainer {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.gridContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Container for each month */
+.monthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+/* Grid for days */
+.daysGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+}
+
+/* Individual day box */
+.dayBox {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+}
+
+/* Month label */
+.monthLabel {
+  margin-top: 8px;
+  color: #8d949a;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 800px) {
+  .boxes {
+    width: 323px;
+  }
+}

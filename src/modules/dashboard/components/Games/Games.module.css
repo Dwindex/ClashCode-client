@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "figtreeBold";
+    src: url("/assets//fonts/figtree/Figtree-Bold.ttf");
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.mainContainer > div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:  flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mainContainer > label{
+    font-family: "figtreeBold";
+    font-size: 24px;
+    color: #FFFFFFB3;
+}

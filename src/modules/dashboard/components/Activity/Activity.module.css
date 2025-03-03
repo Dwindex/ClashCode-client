@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "figtreeRegular";
+    src: url("/assets/fonts/figtree/Figtree-Regular.ttf");
+}
+
+@font-face {
+    font-family: "figtreeMedium";
+    src: url("/assets/fonts/figtree/Figtree-Medium.ttf");
+}
+
+@font-face {
+    font-family: "pressStart2p";
+    src: url("/assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+@font-face {
+    font-family: "figreeSemiBold";
+    src: url("/assets/fonts/figtree/Figtree-SemiBold.ttf");
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.mainContainer{
+    height: 310px;
+    width: 100%;
+    max-width: 338px;
+    border:1px solid #FFFFFF33;
+    border-radius: 12px;
+    background-color: #FFFFFF1A;
+    position: relative;
+}
+
+.mainContainer > label{
+    position: sticky;
+    top: 0;
+    font-family: "figtreeRegular";
+    font-size: 24px;
+    color: #FFF0EA;
+    border-bottom: 1px solid #FFFFFF1A;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2D38;
+    border-radius: 12px 12px 0 0;
+    z-index: 90;
+}
+
+.body{
+    overflow-y: auto;
+    height: 71%;
+    padding: 14px;
+}
+
+.body > span{
+    font-family: "figtreeBold";
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.data{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-family: "figtreeBold";
+    min-height: 38px;
+}
+
+.time{
+    font-size: 10px;
+    color: #FFFFFF57;
+    white-space: nowrap;
+}
+
+.userName,.message{
+    font-size: 12px;
+}
+
+.userName{
+    color: #4EF16C;
+    margin-left: 12px;
+}
+
+.message{
+    color: #FFFFFF;
+    margin-left: 6px;
+}
+
+
+.showMore{
+    position: absolute;
+    bottom: 0;
+    z-index: 90;
+    height: 34px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-top: 1px solid #FFFFFF1A;
+    background-color: #1F2D38;
+    cursor: pointer;
+    border-radius:0 0 12px 12px;
+}
+
+.showMore > span{
+    height: 0;
+    width: 0;
+    border-top: 16px solid #2245C5;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-radius: 2px;
+}
