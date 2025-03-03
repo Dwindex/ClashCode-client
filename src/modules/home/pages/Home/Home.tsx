@@ -1,5 +1,4 @@
 import { gql, useQuery } from '@apollo/client'
-import React from 'react'
 
 const LoginUser = gql`
   query LoginUser($input: LoginUserInput!) {
@@ -24,7 +23,10 @@ const Home = () => {
     console.warn(data, loading, error, refetch);
 
     return (
-        <div>Home</div>
+       <>
+         <div>Home</div>
+
+       </>
     )
 }
 
