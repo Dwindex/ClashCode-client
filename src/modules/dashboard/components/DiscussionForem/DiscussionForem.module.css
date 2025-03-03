@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "figtreeRegular";
+    src: url("/assets/fonts/figtree/Figtree-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "figtreeBold";
+    src: url("/assets/fonts/figtree/Figtree-Bold.ttf");
+}
+
+@font-face {
+    font-family: "manropeBold";
+    src: url("/assets/fonts/manrope/Manrope-Bold.ttf");
+}
+
+@font-face {
+    font-family: "pressStart";
+    src: url("/assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: flex-start;
+    scroll-margin-top: 100px;
+}
+
+.mainContainer > label{
+    font-family: "figtreeBold";
+    font-size: 24px;
+    color: #FFFFFFB3;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 550px;
+    width: 100%
+}
+
+.data{
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    min-height: 224px;
+    align-items: flex-start;
+    justify-content:  flex-start;
+    gap: 12px;
+    background-color: #D9D9D91A;
+    border-radius: 12px;
+    padding:20px 12px;
+    border: 1px solid #FFFFFF33;
+}
+
+.profileImage{
+    padding: 2px;
+    background-color: #EDEDED;
+    border-radius: 50%;
+    height: 49px;
+}
+
+.profileImage > img {
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    object-fit:cover;
+}
+
+.contextWrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 200px;
+    height: 100%;
+    width: 98%;
+}
+
+.context{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.contextHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contextHeaderTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contextHeaderTitle > label{
+    font-family: "manropeBold";
+    font-size: 18px;
+    color: #EAEAEA;
+    min-width: 140px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contextHeaderTitle > span{
+    color: #878787;
+    font-family: "pressStart";
+    font-size: 10px;
+    width: 115px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+.contextHeaderNavigator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2px;
+    padding: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.contextHeaderNavigator > div{
+    min-height: 4px;
+    min-width: 4px;
+    background-color: #A4A9AD;
+    border-radius: 100%;
+}
+
+.contextBody{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    width: 86%;
+    gap: 12px;
+}
+
+.contextBody > label{
+    font-family: "figtreeBold";
+    font-size: 22px;
+    color: #EAEAEA;
+}
+
+.contextBody > p{
+    font-family: "figtreeRegular";
+    font-size: 14px;
+    color: #EBEBEB;
+}
+
+.icons,.icons > div{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    gap: 28px;
+    margin-top: 24px;
+}
+
+.icons > div{
+    gap: 4px;
+}
+
+.icons > div > img{
+    height: 24px;
+    width: 24px;
+}
+
+.icons > div > span{
+    font-family: "figtreeRegular";   
+    font-size: 20px;
+    color: #FFFFFF70;
+}
+
+.pages{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.pages > span{
+    font-family: "figtreeRegular";
+    font-size: 14px;
+    color: #FFFFFF80;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pages > img{
+    height: 20px;
+    width: 26px;
+}
+
+.rightArrow{
+    transform: scaleX(-1);
+}
+
+.spinnerColor > div{
+    background-color: #D9D9D91A;
+}

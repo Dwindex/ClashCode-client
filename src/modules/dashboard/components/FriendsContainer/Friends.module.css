@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "figtreeMedium";
+    src: url("/assets/fonts/figtree/Figtree-Medium.ttf");
+}
+
+
+@font-face {
+    font-family: "figtreeSemiBold";
+    src: url("/assets/fonts/figtree/Figtree-SemiBold.ttf");
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    width: 100%;
+    max-width: 340px;
+    border: 1px solid #FFFFFF33;
+    background-color: #FFFFFF1A;
+    border-radius: 12px;
+    padding-bottom: 16px;
+    overflow-y: auto;
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.mainContainer > span{
+    font-family: "figtreeBold";
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.mainContainer > label{
+        position: sticky;
+        top: 0;
+        font-family: "figtreeSemiBold";
+        font-size: 18px;
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF40;
+        padding: 14px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #1F2D38;
+        z-index: 90;
+}
+
+.mainContainer > div{
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    margin: 0 16px;
+    border-bottom: 0.2px solid #747474;
+}
+
+.mainContainer > div > div{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.mainContainer > div > div > img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #FFFFFFB5;
+    clip-path: circle(at center);
+}
+
+.mainContainer > div > div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    font-family: "figtreeMedium";
+}
+
+.mainContainer > div > div > div > label{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.mainContainer > div > div > div > span{
+    font-size: 12px;
+    color: #FFFFFF66;
+}
+
+
+.challangeBtn{
+    height: 26px;
+    width: 90px;
+    background-color: #F67B46;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    color:#FFFFFF;
+    font-family: "figtreeMedium";
+    font-size: 12px;
+}
+
