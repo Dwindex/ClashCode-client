@@ -1,4 +1,6 @@
 
+import assets from '@/lib/assets';
+import { listOfGames } from '@/modules/dashboard/types/ContestCard';
 import { options } from '@/types/constants';
 
 export default class constants {
@@ -100,21 +102,23 @@ export default class constants {
   ];
 
   //dashboard contests
-  static dashboardContests = [
+  static dashboardGames:listOfGames = [
     {
-      title: "1 vs 1 contest", context: "Battle live with your opponent on a common problem statement and win 2x Prize money", link: "#",
-      backgroundImage: "/static/images/dashboard/contest/contest1.svg"
+      title: "Play With Friend", baseTitle: "Battle live with your opponent on a common problem statement and win 2x Prize money", route: "/",
+      imageUrl: assets.Images.contests.contest1v1,
+      iconUrl: assets.Icons.contest.icon1v1
     },
     {
-      title: "2 vs 2 contest", context: "Battle live with your opponent on a common problem statement and win 2x Prize money", link: "#",
-
-      backgroundImage: "/static/images/dashboard/contest/contest2.svg"
+      title: "Play With Friend", baseTitle: "Battle live with your opponent on a common problem statement and win 2x Prize money", route: "/",
+      imageUrl: assets.Images.contests.contest1v1,
+      iconUrl: assets.Icons.contest.icon1v1
     },
     {
-      title: "Group contest", context: "Battle live with your opponent on a common problem statement and win 2x Prize money", link: "#",
-
-      backgroundImage: "/static/images/dashboard/contest/contest3.svg"
+      title: "Play With Friend", baseTitle: "Battle live with your opponent on a common problem statement and win 2x Prize money", route: "/",
+      imageUrl: assets.Images.contests.contest1v1,
+      iconUrl: assets.Icons.contest.icon1v1
     },
+    
   ]
 
   static typesOfMatches = ["1v1", "2v2", "Group", "Pool"];
