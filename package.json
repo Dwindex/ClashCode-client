@@ -12,15 +12,20 @@
   "dependencies": {
     "@apollo/client": "^3.12.6",
     "@monaco-editor/react": "^4.6.0",
+    "clsx": "^2.1.1",
     "graphql": "^16.10.0",
     "monaco-editor": "^0.52.2",
+    "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.3",
-    "sass": "^1.83.4"
+    "recharts": "^2.15.1",
+    "sass": "^1.83.4",
+    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@types/node": "^22.13.4",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.3.4",
