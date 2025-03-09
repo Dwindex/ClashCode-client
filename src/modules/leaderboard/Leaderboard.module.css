@@ -1,0 +1,25 @@
+@font-face {
+    src: url("../../../../../public/static/fonts/Figtree/Figtree-Medium.ttf");
+    font-family: "figtree-medium";
+  }
+  @font-face {
+    src: url("../../../../../public/static/fonts/Figtree/Figtree-Regular.ttf");
+    font-family: "figtree-regular";
+  }
+  @font-face {
+    src: url("../../../../../public/static/fonts/Figtree/Figtree-SemiBold.ttf");
+    font-family: "figtree-semibold";
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #051521;
+    /* overflow: hidden;   */
+  }
+  

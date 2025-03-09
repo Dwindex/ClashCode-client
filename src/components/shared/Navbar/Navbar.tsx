@@ -15,15 +15,8 @@ function NavBar() {
 
   return (
     <nav className={styles.navbar}>
-      {/* Overlay for blur effect */}
-      <div
-        className={`${styles.overlay} ${menuOpen ? styles.active : ""}`}
-        onClick={toggleMenu}
-      ></div>
+    
 
-      <div className={styles.menu} onClick={toggleMenu}>
-        <img src={menuOpen ? Close : Menu} alt="Menu" width={24} height={24} />
-      </div>
       <div className={styles.introText}>
         <span>Clash</span>
       </div>

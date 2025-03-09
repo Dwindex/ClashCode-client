@@ -7,6 +7,7 @@ import Allcontest from './modules/v1Contests/page/allContests/allcontest'
 import ProfilePage from './modules/ProfilePage/ProfilePage'
 import './App.css'
 import Dashboard from './modules/dashboard/pages/Dashboard'
+import Leaderboard from './modules/leaderboard'
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Route path={"/play"} element={<Play />} />
       <Route path={"/1v1/contests"} element={<Allcontest />} />
       <Route path={"/profile"} element={<ProfilePage />} />
+      <Route path={"/leaderboard"} element={<Leaderboard />} />
+
     </Routes>
   )
 }

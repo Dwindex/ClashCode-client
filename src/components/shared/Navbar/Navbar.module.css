@@ -40,13 +40,14 @@
   position: fixed;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 1%;
   height: 8vh;
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #2a3842;
-  color: white;
-  font-family: "raleway-regular";
+  font-family: "figtree-medium";
+
 }
 
 .introText span {
