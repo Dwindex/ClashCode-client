@@ -1,6 +1,6 @@
-import ParticipantCard from "@/components/shared/ParticipantCard/ParticipantCard";
-import { gql, useQuery } from "@apollo/client";
-import React from "react";
+import useCustomWebsocket from "@/core/hooks/websocket/useWebsocket";
+import { gql } from "@apollo/client";
+import React, { useEffect } from "react";
 
 const LoginUser = gql`
   query LoginUser($input: LoginUserInput!) {
@@ -12,21 +12,29 @@ const LoginUser = gql`
 `;
 
 const Home = () => {
-  const { data, loading, error, refetch } = useQuery(LoginUser, {
-    variables: {
-      input: {
-        email: "shemanth.kgp@gmail.com",
-        password: "123456",
-      },
-    },
-    fetchPolicy: "cache-and-network",
-  });
+  // const { data, loading, error, refetch } = useQuery(LoginUser, {
+  //   variables: {
+  //     input: {
+  //       email: "shemanth.kgp@gmail.com",
+  //       password: "123456",
+  //     },
+  //   },
+  //   fetchPolicy: "cache-and-network",
+  // });
 
-  console.warn(data, loading, error, refetch);
+  const { sendMessage, readyState, LastMessages, joinChannel } = useCustomWebsocket();
+
+  useEffect(() => {
+    joinChannel("test");
+  }, [joinChannel, readyState]);
+
+  useEffect(() => {
+    console.warn(LastMessages);
+  }, [LastMessages]);
 
   return (
-    // <div>Home</div>
-    <ParticipantCard />
+    <div>Home</div>
+    // <ParticipantCard />
   );
 };
 

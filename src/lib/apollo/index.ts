@@ -1,8 +1,9 @@
 import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import { BACKEND_URL } from '../routes';
 
 const httpLink = createHttpLink({
-    uri: 'https://clashcode-backendv2-production.up.railway.app/api',
+    uri: `${BACKEND_URL}/api`,
 });
 
 const authLink = setContext((_, { headers }) => {
