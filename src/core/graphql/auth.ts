@@ -1,9 +1,9 @@
 import { gql } from "@apollo/client";
 
-export const CREATE_USER = gql`
-  mutation CreateUser($input: RegisterUserInput!) {
-    createUser(input: $input) {
-      userID
+export const LOGIN_QUERY = gql`
+  query LoginUser($input: LoginUserInput!) {
+    loginUser(input: $input) {
+      token
       user {
         userID
         username
@@ -13,13 +13,13 @@ export const CREATE_USER = gql`
         kyc
         image
         rating
+
         address
         summary
         dob
         gender
         isactive
       }
-      token
     }
   }
 `;

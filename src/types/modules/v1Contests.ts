@@ -13,8 +13,8 @@ export type problem = {
 }
 
 export type matchmakingDataModel = {
-    problem : problem,
-    session_id:string,
+    Problem : problem,
+    SessionId:string,
     status :boolean,
     user1: User,
     user2: User

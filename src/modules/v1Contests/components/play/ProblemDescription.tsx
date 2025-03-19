@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/modules/v1Contests/page/play/play.module.css';
+import styles from '@/modules/v1Contests/components/play/play.module.css';
 
 interface ProblemDescriptionProps {
   problem: {
@@ -12,16 +12,18 @@ interface ProblemDescriptionProps {
 }
 
 const ProblemDescription: React.FC<ProblemDescriptionProps> = ({ problem }) => {
+  console.warn("Problem: ", problem);
+  
   return (
     <div className={styles.problem}>
-      <label>{problem?.title ?? ""}</label>
-      <p>{problem?.description ?? ""}</p>
+      <label>{problem?.Title ?? ""}</label>
+      <p>{problem?.Description ?? ""}</p>
       <span>Example: </span>
-      <div className={`${(problem?.explanation?.length ?? "".length) > 0 && styles.example_box_min_height} ${styles.example_box}`}>
-        <label>Input: {problem?.public_sample_input ?? ""}</label>
-        <label>Output: {problem?.public_sample_output ?? ""}</label>
-        {problem?.explanation && (
-          <label>Explanation: <p>{problem?.explanation}</p></label>
+      <div className={`${(problem?.Explaination?.length ?? "".length) > 0 && styles.example_box_min_height} ${styles.example_box}`}>
+        <label>Input: {problem?.SampleInput ?? ""}</label>
+        <label>Output: {problem?.SampleOutPut ?? ""}</label>
+        {problem?.Explaination && (
+          <label>Explanation: <p>{problem?.Explaination}</p></label>
         )}
       </div>
       <label className={styles.topics_text}>Topics:</label>

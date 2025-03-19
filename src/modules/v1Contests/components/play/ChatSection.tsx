@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/modules/v1Contests/page/play/play.module.css';
+import styles from '@/modules/v1Contests/components/play/play.module.css';
 import { chatModal } from '@/modules/v1Contests/types/play';
 
 interface ChatSectionProps {

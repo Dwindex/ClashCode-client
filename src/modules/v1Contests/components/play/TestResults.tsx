@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../page/play/play.module.css';
+import styles from './play.module.css';
 import { runDataModal } from '../../types/play';
 
 interface TestResultsProps {

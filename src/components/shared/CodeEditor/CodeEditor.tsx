@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/modules/v1Contests/page/play/play.module.css";
+import styles from "@/modules/v1Contests/components/play/play.module.css";
 import { Editor } from "@monaco-editor/react";
 import { handleEditorMount } from "@/modules/v1Contests/controller/handleEditorMount";
 import { options } from "./config";

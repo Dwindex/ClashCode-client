@@ -4,6 +4,8 @@ import {
     CreateUserMutationResponse, 
     RegisterUserInput 
 } from '../../types/mutation';
+import { AUTH_TOKEN_KEY } from '@/constants/auth';
+import { useCallback } from 'react';
 
 interface UseSignupMutationResult {
     signUp: (input: RegisterUserInput) => Promise<CreateUserMutationResponse>;
@@ -18,7 +20,7 @@ export const useSignupMutation = (): UseSignupMutationResult => {
         { input: RegisterUserInput }
     >(CREATE_USER);
 
-    const signUp = async (input: RegisterUserInput): Promise<CreateUserMutationResponse> => {
+    const signUp = useCallback(async (input: RegisterUserInput): Promise<CreateUserMutationResponse> => {
         try {
             const response = await mutate({
                 variables: { input }
@@ -27,11 +29,8 @@ export const useSignupMutation = (): UseSignupMutationResult => {
             if (!response.data) {
                 throw new Error('No data returned from mutation');
             }
-
-            // You might want to handle the token here, e.g., store it in localStorage
-            // TODO: add to cookies instead
             if (response.data.createUser.token) {
-                localStorage.setItem('token', response.data.createUser.token);
+                localStorage.setItem(AUTH_TOKEN_KEY, response.data.createUser.token);
             }
 
             return response.data;
@@ -39,7 +38,7 @@ export const useSignupMutation = (): UseSignupMutationResult => {
             console.error('Signup mutation error:', err);
             throw err;
         }
-    };
+    }, [mutate]);
 
     return {
         signUp,

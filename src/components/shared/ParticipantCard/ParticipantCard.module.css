@@ -1,0 +1,58 @@
+.container {
+    width: 146px;
+    height: 198px;
+    margin: 80;
+    padding: 80;
+    background: #0f2531;
+    border-radius: 6px;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageContainer {
+    border-radius: 3px;
+    flex: 3;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.imageContainer img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.contentContainer {
+    flex: 1;
+    padding-left: 6px;
+    padding-top: 4px;
+    position: relative;
+}
+
+.name {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.championContainer {
+    background-color: #ffffff14;
+    width: 32px;
+    height: 32px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 6px;
+    border-radius: 4px;
+    position: absolute;
+    right: 12px;
+    top: -50%;
+    transform: translateY(50%);
+}
+
+.championContainer img {
+    width: 21px;
+    height: 23px;
+}

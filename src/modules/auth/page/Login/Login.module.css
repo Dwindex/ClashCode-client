@@ -43,27 +43,39 @@
 .signCard {
   display: flex;
   flex-direction: column;
-
-  background-color: #191919;
-  border-radius: 19px;
+  background-color: rgba(25, 25, 25, 0.95);
+  border-radius: 24px;
   align-items: center;
   text-align: center;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.signCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
 .loginCardDimensions {
-  height: 500px;
-  width: 320px;
+  height: 520px;
+  width: 340px;
+  padding: 2rem 1.5rem;
 }
 
 .signUpCardDimensions {
   height: auto;
   width: 320px;
 }
+
 .signCard > label {
-  font-size: 26px;
-  font-family: "figtree-medium";
+  font-size: 28px;
+  font-family: "figtree-semibold";
   color: #ffffff;
-  margin-top: 20px;
+  margin: 0.5rem 0 1.5rem;
+  letter-spacing: -0.5px;
 }
 
 .signCard > label::after {
@@ -71,57 +83,93 @@
   color: #ff8181;
 }
 
+.signUpCardDimensions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.inputGroup {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+
+.inputGroup label {
+  font-size: 13px;
+  font-family: "figtree-regular";
+  color: #ffffff;
+}
+
 .loginText {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "figtree-medium";
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .loginText span {
   color: #ffffff;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .loginText p {
   color: #a4a4a4;
-  font-size: 12px;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 .button {
-  height: 36px;
-  width: 250px;
-  box-shadow: 4px 5px 0px #ff6a6a, -4px 5px 0px #ff6a6a, 0px 5px 0px #ff6a6a,
-    0px 0px 0 #ff6a6a;
-  font-size: 20px;
-  color: #360000;
-  background-color: #ffbaba;
-  border-radius: 6px;
-  font-family: "figtree-medium";
+  margin-top: 20px;
+  height: 44px;
+  width: 260px;
   font-size: 15px;
-  bottom: 5px;
-  left: 0;
-  right: 0;
+  color: #1a0000;
+  background-color: #ffbaba;
+  border-radius: 12px;
+  font-family: "figtree-semibold";
   border: none;
   outline: none;
-  transition: 50ms ease-in-out;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(255, 106, 106, 0.3);
+}
+
+.button:hover {
+  background-color: #ffc5c5;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 106, 106, 0.4);
 }
 
 .button:active {
-  /* width: 78%; */
-  transform: translateY(3px) scale(103%);
-  box-shadow: 1px 2px 0px #ff6a6a, -1px 2px 0px #ff6a6a, 0px 2px 0px #ff6a6a,
-    0px 0px 0 #ff6a6a;
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(255, 106, 106, 0.3);
 }
+
+.signCard > span {
+  color: #ffffff;
+  font-family: "figtree-regular";
+  font-size: 13px;
+  margin: 1.5rem 0;
+}
+
 .signCard span a {
   color: #ffb6b6;
   text-decoration: none;
-}
-.signCard > span {
-  color: #ffffff;
   font-family: "figtree-medium";
-  font-size: 12px;
-  margin-bottom: 5%;
+  transition: color 0.2s ease;
+}
+
+.signCard span a:hover {
+  color: #ffd0d0;
+}
+
+.loginText p {
+  font-size: 14px;
+  width: 75%;
 }
 
 /* WIDHTs */

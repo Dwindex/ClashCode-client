@@ -1,13 +1,12 @@
 import React from "react";
-import styles from "../Signup.module.css";
-import { RegisterModel } from "@/types/modules/auth";
+import styles from "../Login.module.css";
+import { LoginModel } from "@/types/modules/auth";
 import InputBox from "../../../../../components/molecules/InputBox";
-import GoogleButton from "../../../../../components/molecules/GoogleButton";
 import Button from "../../../../../components/atoms/Button";
 
 interface RightContainerProps {
   onSubmit: (e: React.FormEvent) => void;
-  handleInputs: (value: string, key: keyof RegisterModel) => void;
+  handleInputs: (value: string, key: keyof LoginModel) => void;
 }
 
 const RightContainer: React.FC<RightContainerProps> = ({
@@ -23,8 +22,8 @@ const RightContainer: React.FC<RightContainerProps> = ({
         <label>Clash</label>
 
         <div className={styles.loginText}>
-          <span>Create your Account</span>
-          <p>Welcome! Fill the details below to join ClashCode</p>
+          <span>Login</span>
+          <p>Welcome Back to ClashCode! We are happy to see you back</p>
         </div>
 
         {/* <GoogleButton
@@ -34,14 +33,6 @@ const RightContainer: React.FC<RightContainerProps> = ({
         /> */}
 
         <div className={styles.inputGroup}>
-          <InputBox
-            name="username"
-            placeHolder="Create a unique username"
-            onChange={(e) => handleInputs(e, "username")}
-            id="username"
-            title="Username"
-            type="text"
-          />
           <InputBox
             name="email"
             placeHolder="Enter Email"
@@ -62,11 +53,11 @@ const RightContainer: React.FC<RightContainerProps> = ({
 
         <div className={styles.actionGroup}>
           <Button variant="primary" className={styles.button} type="submit">
-            Create Account
+            Login
           </Button>
         </div>
         <span>
-          Already have an account? <a href="/login">Login</a>
+          Don't have an account? <a href="/signup">Signup</a>
         </span>
       </form>
     </div>
