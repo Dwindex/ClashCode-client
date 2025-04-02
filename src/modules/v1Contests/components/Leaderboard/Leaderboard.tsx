@@ -17,7 +17,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({ onClick, Data }) => {
   return (
     <div className={styles.main_container}>
       <div className={styles.top}>
-        <span>Leaderboards</span>
+        <span className={styles.leaderboardText}>Leaderboard</span>
       </div>
       <div className={styles.score_board}>
         <div className={styles.header}>

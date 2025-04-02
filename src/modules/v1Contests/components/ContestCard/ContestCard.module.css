@@ -4,12 +4,13 @@
 }
 
 .contestsCard {
-  width: 40vw;
+  max-width: 500px;
+  
 }
 
 .part1 {
   display: flex;
-  padding: 30px;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(45, 59, 69);

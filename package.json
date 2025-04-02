@@ -12,8 +12,8 @@
   "dependencies": {
     "@apollo/client": "^3.12.6",
     "@monaco-editor/react": "^4.6.0",
-    "dayjs": "^1.11.13",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
     "graphql": "^16.10.0",
     "monaco-editor": "^0.52.2",
     "next": "^15.1.7",

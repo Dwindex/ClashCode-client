@@ -14,9 +14,7 @@ function NavBar() {
   };
 
   return (
-    <nav className={styles.navbar}>
-    
-
+    <nav className={styles.navbar}>    
       <div className={styles.introText}>
         <span>Clash</span>
       </div>

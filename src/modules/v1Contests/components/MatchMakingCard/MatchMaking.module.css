@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "figtreeSemiBold";
+    src: url("/assets/fonts/figtree/Figtree-SemiBold.ttf");
+}
+@font-face {
+    font-family: "figtreeReg";
+    src: url("/assets/fonts/figtree/Figtree-Regular.ttf");
+}
+@font-face {
+    font-family: "figtreeMedium";
+    src: url("/assets/fonts/figtree/Figtree-Medium.ttf");
+}
+@font-face {
+    font-family: "figtreeLight";
+    src: url("/assets/fonts/figtree/Figtree-Light.ttf");
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 394px;
+    width: 100%;
+    max-height: 394px;
+    max-width: 660px;
+    background-color: #FFFFFF1A;
+    border: 1px solid #FFFFFF0F;
+    border-radius: 12px;
+    padding:2.4%;
+}
+
+.mainContainer > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 9%;
+}
+
+.middleContext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 28px;
+    color: #FFFFFF;
+}
+
+
+.middleContext > label{
+    font-family: "figtreeMedium";
+    font-size: 30px;
+    text-align: center;
+}
+
+.middleContext > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.middleContext > div > label{
+    font-family: "figtreeReg";
+    font-size: 8px;
+}
+
+.middleContext > div > span{
+    font-family: "figtreeMedium";
+    font-size: 20px;
+}
+
+
+.mainContainer > label{
+    font-family: "figtreeLight";
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-bottom: 6%;
+}
+
+
+.mainContainer > button{
+    height: 26px;
+    width: 134px;
+    border: none;
+    background-color: #F67B46;
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-family: "figtreeMedium";
+    font-size: 12px;
+}
+
+.findingUser , .userCard{
+    min-width: 150px;
+    height: 200px; 
+    background-color: #0F2531;
+    border: 4px solid #0F2531;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.findingUser{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.findingUser > img{
+    height: 100px;
+    width: 100px;
+    object-fit: fill;
+    object-position: center;
+}
+
+.findingUser > label{
+    font-family: "figtreeSemiBold";
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.userCard{
+    position: relative;
+    border-radius: 6px;
+}
+
+.userCard > img{
+    height: 144px;
+    object-fit: fill;
+    object-position: center;
+}
+
+.userCard > label{
+    color: #FFFFFF;
+    font-family: "figtreeSemiBold";
+    font-size: 10px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.userCard > div{
+    position: absolute;
+    right: 16px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4px;
+}
+
+.userCard > div > div{
+    background-color: #FFFFFF14;
+    border-radius: 4px;
+    height: 33px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userCard > div > div > img{
+    height: 23px;
+    width: 21px;
+}
+
+.userCard > div > span{
+    font-size: 8px;
+    color: #FFFFFF;
+    font-family: "figtreeReg";
+}

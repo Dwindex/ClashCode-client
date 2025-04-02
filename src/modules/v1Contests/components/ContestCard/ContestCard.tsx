@@ -17,7 +17,7 @@ const ContestsCard: React.FC<ContestsCardProps> = (props) => {
         <div>
           <p className={Styles.fee}>Entry Fee</p>
           <button>₹{props.entryFee}</button>
-        </div>
+        </div>  
       </div>
       <div className={Styles.part2}>
         <div>

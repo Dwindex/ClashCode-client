@@ -2,7 +2,7 @@ import React, { Suspense} from "react";
 import Dashboard from "./components/Dashboard";
 import LoadingSpinner from "@/components/atoms/LoadingSpinner";
 import Styles from "./Dashboard.module.css";
-import useDiscussionForum from "../../hooks/utils/use_discussionForum";
+import useDiscussionForum from "../../hooks/utils/useDiscussionForum";
 
 
 const DashboardContainer: React.FC = () => {

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { useDiscussionForumQuery } from "../querie/getDiscussionForemQuerie";
+import { useDiscussionForumQuery } from "../query/getDiscussionForumQuery";
 
 const useDiscussionForum = () => {
     const discussionForem = useDiscussionForumQuery();

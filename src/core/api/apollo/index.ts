@@ -3,7 +3,7 @@ import { setContext } from '@apollo/client/link/context';
 
 
 const httpLink = new HttpLink({
-  uri: 'https://clashcode-backendv2-production.up.railway.app/api',
+  uri: 'http://localhost:4000/api',
 });
 
 const authLink = setContext((_, { headers }) => {
